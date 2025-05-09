@@ -89,8 +89,7 @@ def create_eda_zip(xml_tree, name):
     xml_tree.write(xml_path, encoding="utf-8", xml_declaration=True)
 
     with open(manifest_path, "w", encoding="utf-8") as m:
-        m.write(f"Datei: {name}.xml
-")
+        m.write(f"Datei: {name}.xml")
 
     with zipfile.ZipFile(zip_path, 'w') as zipf:
         zipf.write(xml_path, arcname=f"{name}.xml")
