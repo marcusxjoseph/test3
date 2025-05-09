@@ -1,0 +1,5 @@
+Flask
+lxml
+pdf2image
+pytesseract
+Pillow

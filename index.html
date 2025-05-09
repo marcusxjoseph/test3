@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDA ZIP Generator</title>
+</head>
+<body>
+    <h1>Upload CSV oder JSON</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Hochladen & Generieren" />
+    </form>
+
+    <h1>Upload PDF</h1>
+    <form action="/upload-pdf" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdf" />
+        <input type="submit" value="PDF Verarbeiten" />
+    </form>
+</body>
+</html>
