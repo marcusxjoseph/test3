@@ -87,7 +87,7 @@ def create_eda_zip(tree, name):
     tree.write(xml_path, encoding='utf-8', xml_declaration=True)
 
     with open(manifest_path, 'w') as m:
-        m.write("Manifest-Version: 1.0
+        m.write("Manifest-Version: 1.0n")
 ")
         m.write(f"Datei: {name}.xml
 ")
